@@ -87,11 +87,11 @@ input:focus {
   position: relative;
 }
 
-input[type='checkbox'] + label {
+input[type="checkbox"] {
   color: black;
 }
 
-input[type='checkbox']:checked + label {
+input[type="checkbox"]:checked {
   color: grey;
   font-style: normal;
   text-decoration: line-through;
