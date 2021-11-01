@@ -1,7 +1,7 @@
 // eslint-disable-next-line
-import { saveTaskToLocal, tasks } from './index.js';
+import { inputTask } from "./events.js";
 // eslint-disable-next-line
-import { inputTask } from './events.js';
+import { saveTaskToLocal, tasks } from "./index.js";
 
 class Task {
   constructor(description, completed = false, index) {
@@ -17,7 +17,7 @@ export const addNewTask = () => {
   if (tasks.length > 0) newTask.index = tasks.length + 1;
   tasks.push(newTask);
   saveTaskToLocal(tasks);
-  inputTask.value = '';
+  inputTask.value = "";
   // eslint-disable-next-line
   location.reload();
 };

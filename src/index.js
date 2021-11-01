@@ -1,7 +1,7 @@
 import _ from 'lodash';
+import { changeState } from './events.js';
 import './style.css';
 // eslint-disable-next-line
-import { changeState } from './events.js';
 
 export const listContainer = document.querySelector('.list');
 // eslint-disable-next-line
